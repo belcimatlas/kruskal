@@ -149,30 +149,20 @@ void printSpanningTree() {
 }
 
 int main() {
-    int n = 5; // Assuming there are 5 vertices in the graph
-
-    // Initialize graph (assuming undirected graph)
-    // For simplicity, let's assume an adjacency matrix representation
-    // where graph[i][j] holds the weight of the edge between vertices i and j
-    // If there is no edge between vertices i and j, graph[i][j] should be 0.
-    // Note: This initialization should be based on your specific graph.
-
-    // For example:
+    int n = 5; //ornek graf 5 dugumlu 
+    //ornek graf
     graph[0][1] = 1;
     graph[0][2] = 5;
-    graph[0][3] = 0;
+    graph[0][3] = 0;     //kenar yok anlamina gelir
     graph[0][4] = 3;
     graph[1][2] = 0;
     graph[1][3] = 0;
     graph[1][4] = 0;
     graph[2][3] = 2;
-    graph[2][4] = 0;
+    graph[2][4] = 0;        
     graph[3][4] = 4;
 
-    // Call Kruskal's algorithm
     kruskal(n);
-
-    // Print the spanning tree
     printSpanningTree();
 
     return 0;
